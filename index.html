@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Premium</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#10B981',
+            dark: '#1E293B',
+            light: '#F8FAFC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="text-dark">
+  <div class="container mx-auto px-4 py-8 max-w-3xl">
+    <!-- Header -->
+    <div class="flex flex-col items-center text-center mb-12 fade-in">
+      <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4">
+       <img src="img/Logo.png" alt="Logo" class="w-full h-full object-cover bg-white p-1" />
+      </div>
+      <h1 class="text-3xl font-bold text-primary mb-2">Doctor Premium</h1>
+      <p class="text-gray-600 mb-6"></p>
+
+      <!-- Search -->
+      <div class="w-full max-w-md mb-8">
+        <div class="search-box relative bg-white rounded-xl p-1 shadow-sm flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" id="searchInput" placeholder="Cari produk...." class="w-full py-3 px-2 focus:outline-none text-dark rounded-lg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk -->
+    <div id="productContainer" class="space-y-4">
+
+      <div class="card-hover bg-white rounded-xl p-4 flex items-center shadow-md fade-in"
+        data-category="tiktok" data-title="viewers tiktok" data-tags="loklok,premium,vip,akun">
+        <div class="w-16 h-16 rounded-lg overflow-hidden mr-4">
+          <img src="img/loklokvip.png" alt="Logo loklok" class="w-full h-full object-contain bg-white p-1" />
+        </div>
+        <div class="flex-1">
+          <h3 class="font-bold text-lg">Akun Loklok Premium/VIP</h3>
+          <p class="text-gray-600 text-sm">Akses semua fitur VIP loklok - Privat dan sharing</p>
+        </div>
+        <a href="https://wa.me/6283139624621?text=Halo%20kak%20saya%20mau%20order%20akun%20loklok" target="_blank"
+          class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg font-medium transition-colors">Order</a>
+      </div>
+      
+      <div class="card-hover bg-white rounded-xl p-4 flex items-center shadow-md fade-in"
+        data-category="tiktok" data-title="viewers tiktok" data-tags="tiktok,view">
+        <div class="w-16 h-16 rounded-lg overflow-hidden mr-4">
+          <img src="img/followtiktok.png" alt="Logo TikTok" class="w-full h-full object-contain bg-white p-1" />
+        </div>
+        <div class="flex-1">
+          <h3 class="font-bold text-lg">Followers Tiktok</h3>
+          <p class="text-gray-600 text-sm">Paket Follow akun tiktok termurah</p>
+        </div>
+        <a href="https://wa.me/6283139624621?text=Halo%20kak%20saya%20mau%20order%20followers%20tiktok" target="_blank"
+          class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg font-medium transition-colors">Order</a>
+      </div>
+
+      <div class="card-hover bg-white rounded-xl p-4 flex items-center shadow-md fade-in"
+        data-category="tiktok" data-title="viewers tiktok" data-tags="tiktok,view">
+        <div class="w-16 h-16 rounded-lg overflow-hidden mr-4">
+          <img src="img/tiktokview.png" alt="Logo TikTok" class="w-full h-full object-contain bg-white p-1" />
+        </div>
+        <div class="flex-1">
+          <h3 class="font-bold text-lg">Viewers TikTok</h3>
+          <p class="text-gray-600 text-sm">Paket View vidio tiktok termurah</p>
+        </div>
+        <a href="https://wa.me/6283139624621?text=Halo%20kak%20saya%20mau%20order%20viewers%20tiktok" target="_blank"
+          class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg font-medium transition-colors">Order</a>
+      </div>
+
+      
+      <div class="card-hover bg-white rounded-xl p-4 flex items-center shadow-md fade-in"
+        data-category="app" data-title="like tiktok" data-tags="like,tiktok">
+        <div class="w-16 h-16 rounded-lg overflow-hidden mr-4">
+        <img src="img/tiktoklike.png" alt="Logo TikTok" class="w-full h-full object-contain bg-white p-1" />
+        </div>
+        <div class="flex-1">
+          <h3 class="font-bold text-lg">Like TikTok</h3>
+          <p class="text-gray-600 text-sm">Paket Like vidio TikTok termurah</p>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo%20kak%20saya%20ingin%20order%20liketiktok" target="_blank"
+          class="bg-secondary hover:bg-secondary/90 text-white px-5 py-2 rounded-lg font-medium transition-colors">Order</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 text-center text-gray-500 text-sm fade-in">
+      <p>© 2025 Doctor Premium. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
